@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload file</title>
+	<style>
+		body{
+			margin-top: 50px;
+		}
+		h1{
+			margin-top: 80px;
+			text-align: center;
+		}
+		img {
+			width: 75%,
+			height: 75%;
+			}
+		.formi{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>CheckboxnLogo</h1>
+	Form Type : {{ result }}
+	{% if filename %}
+		<div align="center"><img src="{{ url_for('send_file', filename=filename) }}"></div>
+	{% else %}
+		<form class="formi" action="/" method=post enctype=multipart/form-data>
+			<input type=file name=file>
+			<input type=submit value=Upload>
+		</form>
+	{% endif %}
+
+	
+</body>
+</html>
