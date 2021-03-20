@@ -28,7 +28,7 @@ importlib-metadata==2.0.0
 isodate==0.6.0
 itsdangerous==1.1.0
 jeepney==0.4.3
-Jinja2==2.11.2
+Jinja2==2.11.3
 jmespath==0.10.0
 joblib==0.17.0
 jsonpickle==1.4.1
